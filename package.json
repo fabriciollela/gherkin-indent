@@ -59,7 +59,7 @@
     ],
     "keybindings": {
       "command": "gherkin-indent.format",
-      "key": "ctrl+g ctrl+f",
+      "key": "ctrl+shift+f",
       "when": "editorTextFocus"
     },
     "commands": [
@@ -74,16 +74,19 @@
       "properties": {
         "gherkin-indent.stepIndent": {
           "type": "number",
-          "default": "7",
-          "description": "Default indentation for Given, When, Then, And, But steps"
+          "default": "4",
+          "description": "Default indentation for Gherkin steps"
         }
       }
     }
   },
   "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
-    "vscode": "^0.11.0"
+    "vscode": "^0.11.0",
+    "typescript": "^1.8.5"
   }
 }
