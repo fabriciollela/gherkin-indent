@@ -1,64 +1,33 @@
-# gherkin-indent
+# Gherkin Indent Korean
 
-Gherkin Indent sets the indentation for Gherkin (cucumberjs) steps and examples.  Automatically applies coloring for features, scenarios and steps in `.feature` files
-
-## How to use
-
-Apply `Gherkin Indent` from the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd-Shift-P` (OSX) to apply indentation for the `.feature` files or you can use key shortcut `ctrl+g ctrl+f` (Windows, Linux) `Cmd+g Cmd+f` (OSX).
-
-### Code snippets  
-
-Use the following code snippets to add scenarios and steps.
-
-* `feature`
-* `scenario`
-* `outline`
-* `given`
-* `then`
-* `when`
-* `and`
-* `but`
-
-_Note: Select steps and use comment shortcut keys to comment the steps._
-
-![Screen Shot\](https://raw.githubusercontent.com/Aravind00Kumar/gherkin-indent/master/images/screen_shot.gif)
+This extension is forked from [gherkin-indent](https://github.com/Aravind00Kumar/gherkin-indent) for using Korean.
 
 ## Requirements
 
-* You will need to install Visual Studio Code 1.2.1 or higher.
-* From the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX) select Install Extension, choose `Gherkin Indent` and reload Visual Studio Code.
+- You will need to install Visual Studio Code 1.2.1 or higher.
+- From the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX) select Install Extension, choose `Gherkin Indent` and reload Visual Studio Code.
+- **For Korean Coding Font** is required to use this extension.
+  - [D2 Coding Font](https://github.com/naver/d2codingfont)
+  - [Nanum Gothic Coding Font](https://github.com/naver/nanumfont)
+
+## How to use
+
+Apply `Gherkin Indent` from the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd-Shift-P` (OSX) to apply indentation for the `.feature` files or you can use key shortcut `ctrl+Shift+f` (Windows, Linux) `Cmd+Shift+f` (OSX).
 
 ## Extension Settings
 
 This extension contributes the following settings:
 
-* `gherkin-indent.stepIndent`: Sets the indent value. (default is `7`). Note: `stepIndent` includes step name length. 
-
-## Release Notes
-
-### 2.0.0
-
-* Added new code snippets.
-* Added syntax highlighter for step keywords.
-
-### 1.0.1
-
-* Bug fixes.
-
-### 1.0.0
-
-Added features 
-* Auto table formatting for examples.
-* Indentation for steps `Given, When, Then, And` and `But`. 
+- `gherkin-indent.stepIndent`: Sets the indent value. (default is `4`). Note: `stepIndent` includes step name length.
 
 ## Contributions
- 
-Feel free to contribute by posting issues or pull requests on [gherkin-indent](https://github.com/Aravind00Kumar/gherkin-indent)
 
------------------------------------------------------------------------------------------------------------
+Feel free to contribute by posting issues or pull requests on [gherkin-indent](https://github.com/ClareKang/gherkin-indent)
+
+---
 
 ### References to write Gherkin
 
-* [Gherkin](http://docs.behat.org/en/v3.0/guides/1.gherkin.html)
+- [Gherkin](http://docs.behat.org/en/v3.0/guides/1.gherkin.html)
 
-**Enjoy!**
+Enjoy it 😎
