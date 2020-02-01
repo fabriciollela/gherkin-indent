@@ -6,16 +6,16 @@ var Indent = function(config) {
   this.originalText = "";
   this.lines = [];
   this.words = {
-    feature: ["Feature", "기능"],
-    background: ["Background", "배경"],
-    scenario: ["Scenario", "시나리오"],
-    scenarioOutline: ["Scenario Outline", "시나리오 개요"],
-    examples: ["Examples", "예"],
-    given: ["Given", "조건", "먼저"],
-    when: ["When", "만일", "만약"],
-    then: ["Then", "그러면"],
-    and: ["And", "그리고"],
-    but: ["But", "하지만", "단"]
+    feature: ["Feature", "Funcionalidade"],
+    background: ["Background", "Contexto"],
+    scenario: ["Scenario", "Cenário"],
+    scenarioOutline: ["Scenario Outline", "Esquema de Cenário"],
+    examples: ["Examples", "Exemplos"],
+    given: ["Given", "Dado"],
+    when: ["When", "Quando"],
+    then: ["Then", "Então"],
+    and: ["And", "E"],
+    but: ["But", "Mas"]
   };
   this.nonePaddingKeys = ["feature", "scenario", "scenarioOutline"];
   this.leftPaddingKeys = ["example", "given", "when", "then", "and", "but"];

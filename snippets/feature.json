@@ -1,73 +1,79 @@
 {
-    "feature": {
-        "prefix": "feature",
+    "Funcionalidade": {
+        "prefix": "Funcionalidade",
         "body": [
-            "Feature: ${1:title}",
-            " In order to ${2:achievement}",
-            " As a ${3:type of user}",
-            " I want ${4:goal}",
-            " So that ${5:reason}",
+            "Funcionalidade: ${1:title}",
+            "Como ${3:type of user}",
+            "Quero ${4:goal}",
+            "Para ${5:reason}",
             " "
         ],
-        "description": "Add cucumber new feature",
+        "description": "Adicionar uma nova Funcionalidade",
         "scope": "text.gherkin.syntax"
     },
-    "scenario": {
-        "prefix": "scenario",
+    "cenario": {
+        "prefix": "cenário",
         "body": [
-            "Scenario: ${1:title}",
-            " Given ${2:precondition}",
-            "  When ${3:action}",
-            "  Then ${4:testable outcome}",
+            "Cenário: ${1:title}",
+            " Dado ${2:precondition}",
+            "  Queo ${3:action}",
+            "  Então ${4:testable outcome}",
             " "
         ],
-        "description": "Add cucumber new \"Scenario\" ",
+        "description": "Adicioneo um novo \"Cenário\" ",
         "scope": "text.gherkin.syntax"
     },
-    "outline": {
-        "prefix": "outline",
+    "esquema do cenario": {
+        "prefix": "esquema de cenário",
         "body": [
-            "Scenario Outline: ${1:title}",
-            " Given ${2:precondition}",
-            "  When ${3:action}",
-            "  Then ${4:testable outcome}",
-            " Examples: ",
+            "Esquema de Cenário: ${1:title}",
+            " Dado ${2:precondition}",
+            "  Queo ${3:action}",
+            "  Então ${4:testable outcome}",
+            " Exemplos: ",
             " |  ${5:title}  | ",
             " | ${6:value 1} | ",
             " | ${7:value 2} | ",
             " "
         ],
-        "description": "Add cucumber new \"Scenario Outline\" ",
+        "description": "Adicioneo um novo \"Esquema de Cenário\" ",
         "scope": "text.gherkin.syntax"
     },
-    "given": {
-        "prefix": "given",
-        "body": " Given ${1:precondition}",
-        "description": "Add cucumber \"Given\" Step",
+    "dado": {
+        "prefix": "dado",
+        "body": " Dado ${1:precondition}",
+        "description": "Adicioneo um novo passo \"Dado\"",
         "scope": "text.gherkin.syntax"
     },
-    "then": {
-        "prefix": "then",
-        "body": "  Then ${1:testable outcome}",
-        "description": "Add cucumber \"When\" Step",
+    "então": {
+        "prefix": "então",
+        "body": "  Então ${1:testable outcome}",
+        "description": "Adicioneo um novo passo \"Queo\"",
         "scope": "text.gherkin.syntax"
     },
-    "when": {
-        "prefix": "when",
-        "body": "  When ${1:action}",
-        "description": "Add cucumber \"When\" Step",
+    "queo": {
+        "prefix": "queo",
+        "body": "  Queo ${1:action}",
+        "description": "Adicioneo um novo passo\"Queo\"",
         "scope": "text.gherkin.syntax"
     },
-    "and": {
-        "prefix": "and",
+    "e": {
+        "prefix": "e",
         "body": "   And ${1:addition}",
-        "description": "Add cucumber \"And\" Step",
+        "description": "Adicioneo um novo passo \"And\"",
         "scope": "text.gherkin.syntax"
     },
-    "but": {
-        "prefix": "but",
+    "mas": {
+        "prefix": "mas",
         "body": "   But ${1:addition}",
-        "description": "Add cucumber \"But\" Step",
+        "description": "Adicioneo um novo passo \"But\"",
         "scope": "text.gherkin.syntax"
+    },
+ 
+    "RN": {
+        "prefix": "RNG",
+        "body":  [  
+           "${TM_regras.feature/(Mantem|Solicita)/${1:/downcase}${2:/capitalize}/g}"
+        ]
     }
 }
